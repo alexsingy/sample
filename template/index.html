@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="icon" href="images/accessible.jpeg"> <!--she said you can only use png or icon and not jpeg, but jpeg seems to be working. we'll see-->
+    <script src="https://kit.fontawesome.com/50f377596a.js" crossorigin="anonymous"></script> <!--i think this is my spical link to make sure i can use fontawesome logos?-->
+</head>
+
+<body>
+
+    <main>
+
+        <a href="https://youtu.be/TdqQqyc7pfU?list=PLFFqSL4HViZEhgNN12HYiJbVGNHYPy-cG&t=11074" target="_blank">Paused Here</a>
+    
+        <p> This is my main code </p>
+        
+        <a href="https://validator.w3.org/" target="_blank"> 
+            Validate Code Here
+        </a>
+
+        <a href="https://wave.webaim.org/" target="_blank"> 
+            Validate Accessibility Here
+        </a>
+
+        <a href="https://www.funkify.org/" target="_blank">
+            Use Funkify
+        </a>
+
+        <h1>Accessibility Sites</h1>
+
+        <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WAG WCAG</a>
+
+        <a href="https://siteimprove.com/en-gb/accessibility/wcag-compliance-website-checker/?utm_campaign=uk_fy20_ppc_accessibility&utm_medium=ppc&utm_source=bing&utm_content=wcag&ad_id=84868976024212&adgroup_id=1357898288023977&campaign_id=424451173&tad_id=84868976024212&adgroup_id=1357898288023977&campaign_id=424451173&msclkid=29852b51495514849d074abcfbe55f15&utm_source=bing&utm_medium=cpc&utm_campaign=uk_fy20_ppc_accessibility_generic&utm_term=wcag&utm_content=WCAG" target="_blank">WAG WCAG UK</a>
+
+       <h2>Accessibility Four Principles (POUR)</h2>
+        <ul>
+            <li>Perceivable</li>
+            <li>Operable</li>
+            <li>Understandable</li>
+            <li>Robust</li>
+
+        </ul>
+
+
+
+        <figure>
+
+            <img src="images/accessible.jpeg"
+            width = "30%"
+            alt="Cool thumbs up guy. Very Happy.">
+
+            <figcaption>Cool thumbs up guy. Very Happy.</figcaption>
+       
+        </figure>
+
+
+        <i class="fas fa-angry fa-5x" aria-label="Angry Face Icon"></i>
+        <i class="fas fa-address-card" aria-label="Address Card Icon"></i>
+        
+        <!--.mp3 or .wav for audio files, typically-->
+
+        <h1>Video + Audio</h1>
+
+        <video src="videos/brendanXoxo.MP4" width="10%" controls> 
+            Your browser does not support the <code>video</code>
+        </video>
+
+        <blockquote>"Good Things Fall Apart" <cite>Illenium</cite></blockquote>
+
+        <audio src="audio/coldBoyInSpace.mp3" controls>
+            Cold - Boy In Space
+        </audio>
+
+        <audio src="audio/coldBoyInSpace.mp3#t=44,76" controls>
+            Cold - Boy In Space, set to best point
+        </audio>
+
+        <details><summary>This is Audio</summary>This is a song by an artist named Boy In Space. It is called "cold"</details>
+
+        
+    </main>
+
+    <table>
+        <!--One of the basic differences between THEAD and TH is that THEAD is a block level element, whereas TH is an inline-block. TH also has a special attribute, scope so we can designate what it is a heading of, the column or the row.-->
+
+       <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Height</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Alex</td>
+                <td>25</td>
+                <td>164</td>
+            </tr>
+
+            <tr>
+                <td>Sam</td>
+                <td>25</td>
+                <td>170</td>
+            </tr>
+
+            <tr>
+                <td>Brendan</td>
+                <td>21</td>
+                <td>195</td>
+            </tr>
+        </tbody>
+
+
+
+    </table>
+
+    <section id="abbrTimeCiteSubSupPractice">
+        <abbr title="What about you">WBU</abbr>
+        <cite></cite>
+
+        <figure>
+            <blockquote>
+                Don't think too hard
+            </blockquote>
+            <figcaption>Alex's thoughts on <cite><a href="http://www.george-orwell.org/1984/0.html">Life</a></cite> by Alex</figcaption>
+        </figure>
+
+        <p>The party is going to be at <time datetime="20:00">8:00PM EST</time> on <time datetime="2022-03-05">March 5<sup>th</sup>, 2022</time></p>
+
+        <p>It is Mom's 50<sup>th</sup> birthday party</p>
+
+    </section>
+
+    <section id="needsMore"> <!--These are only useful with JavaScript, but this is just to look at until we get that far-->
+        <button>Open</button>
+        <button>Close</button>
+
+        <meter min="0" max="100" value="50">50%</meter>
+
+        <progress value="70" max="100"></progress>
+
+       <!-- <iframe></iframe> IDK-->
+
+       <br>
+
+        <bdo dir="rtl">This text will go right to left</bdo>
+
+       <br> 
+
+        <bdo dir="ltr">This text will go left to right</bdo>
+
+    </section>
+
+    <footer>
+
+        <br>
+
+        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+       
+        <br>
+
+        &copy; Accessible code *cool face* 2022 <address>678 Red Phe Road</address>
+        
+    </footer>
+    
+</body>
+</html>
